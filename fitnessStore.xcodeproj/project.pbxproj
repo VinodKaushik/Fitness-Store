@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB67FF113B8DA2E00D06DF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF013B8DA2E00D06DF2 /* UIKit.framework */; };
+		3DB67FF313B8DA2E00D06DF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF213B8DA2E00D06DF2 /* Foundation.framework */; };
+		3DB67FF513B8DA2E00D06DF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF413B8DA2E00D06DF2 /* CoreGraphics.framework */; };
+		3DB67FFB13B8DA2E00D06DF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB67FF913B8DA2E00D06DF2 /* InfoPlist.strings */; };
+		3DB67FFE13B8DA2E00D06DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB67FFD13B8DA2E00D06DF2 /* main.m */; };
+		3DB6800113B8DA2E00D06DF2 /* fitnessStoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6800013B8DA2E00D06DF2 /* fitnessStoreAppDelegate.m */; };
+		3DB6800413B8DA2E00D06DF2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6800213B8DA2E00D06DF2 /* MainWindow.xib */; };
+		3DB6800B13B8DA2E00D06DF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF013B8DA2E00D06DF2 /* UIKit.framework */; };
+		3DB6800C13B8DA2E00D06DF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF213B8DA2E00D06DF2 /* Foundation.framework */; };
+		3DB6800D13B8DA2E00D06DF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67FF413B8DA2E00D06DF2 /* CoreGraphics.framework */; };
+		3DB6801513B8DA2E00D06DF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6801313B8DA2E00D06DF2 /* InfoPlist.strings */; };
+		3DB6801813B8DA2E00D06DF2 /* fitnessStoreTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6801713B8DA2E00D06DF2 /* fitnessStoreTests.h */; };
+		3DB6801A13B8DA2E00D06DF2 /* fitnessStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6801913B8DA2E00D06DF2 /* fitnessStoreTests.m */; };
+		3DB6802513B8DC8600D06DF2 /* fitnessStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6802413B8DC8600D06DF2 /* fitnessStoreViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB6800E13B8DA2E00D06DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB67FE313B8DA2E00D06DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB67FEB13B8DA2E00D06DF2;
+			remoteInfo = fitnessStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DB67FEC13B8DA2E00D06DF2 /* fitnessStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnessStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB67FF013B8DA2E00D06DF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DB67FF213B8DA2E00D06DF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DB67FF413B8DA2E00D06DF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DB67FF813B8DA2E00D06DF2 /* fitnessStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fitnessStore-Info.plist"; sourceTree = "<group>"; };
+		3DB67FFA13B8DA2E00D06DF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DB67FFC13B8DA2E00D06DF2 /* fitnessStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fitnessStore-Prefix.pch"; sourceTree = "<group>"; };
+		3DB67FFD13B8DA2E00D06DF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DB67FFF13B8DA2E00D06DF2 /* fitnessStoreAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fitnessStoreAppDelegate.h; sourceTree = "<group>"; };
+		3DB6800013B8DA2E00D06DF2 /* fitnessStoreAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fitnessStoreAppDelegate.m; sourceTree = "<group>"; };
+		3DB6800313B8DA2E00D06DF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3DB6800A13B8DA2E00D06DF2 /* fitnessStoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitnessStoreTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB6801213B8DA2E00D06DF2 /* fitnessStoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fitnessStoreTests-Info.plist"; sourceTree = "<group>"; };
+		3DB6801413B8DA2E00D06DF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DB6801613B8DA2E00D06DF2 /* fitnessStoreTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fitnessStoreTests-Prefix.pch"; sourceTree = "<group>"; };
+		3DB6801713B8DA2E00D06DF2 /* fitnessStoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fitnessStoreTests.h; sourceTree = "<group>"; };
+		3DB6801913B8DA2E00D06DF2 /* fitnessStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fitnessStoreTests.m; sourceTree = "<group>"; };
+		3DB6802313B8DC8600D06DF2 /* fitnessStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fitnessStoreViewController.h; sourceTree = "<group>"; };
+		3DB6802413B8DC8600D06DF2 /* fitnessStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fitnessStoreViewController.m; sourceTree = "<group>"; };
+		3DB6802613B90A0200D06DF2 /* definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB67FE913B8DA2E00D06DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB67FF113B8DA2E00D06DF2 /* UIKit.framework in Frameworks */,
+				3DB67FF313B8DA2E00D06DF2 /* Foundation.framework in Frameworks */,
+				3DB67FF513B8DA2E00D06DF2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB6800613B8DA2E00D06DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB6800B13B8DA2E00D06DF2 /* UIKit.framework in Frameworks */,
+				3DB6800C13B8DA2E00D06DF2 /* Foundation.framework in Frameworks */,
+				3DB6800D13B8DA2E00D06DF2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB67FE113B8DA2E00D06DF2 = {
+			isa = PBXGroup;
+			children = (
+				3DB67FF613B8DA2E00D06DF2 /* fitnessStore */,
+				3DB6801013B8DA2E00D06DF2 /* fitnessStoreTests */,
+				3DB67FEF13B8DA2E00D06DF2 /* Frameworks */,
+				3DB67FED13B8DA2E00D06DF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB67FED13B8DA2E00D06DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67FEC13B8DA2E00D06DF2 /* fitnessStore.app */,
+				3DB6800A13B8DA2E00D06DF2 /* fitnessStoreTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB67FEF13B8DA2E00D06DF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67FF013B8DA2E00D06DF2 /* UIKit.framework */,
+				3DB67FF213B8DA2E00D06DF2 /* Foundation.framework */,
+				3DB67FF413B8DA2E00D06DF2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB67FF613B8DA2E00D06DF2 /* fitnessStore */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67FFF13B8DA2E00D06DF2 /* fitnessStoreAppDelegate.h */,
+				3DB6802313B8DC8600D06DF2 /* fitnessStoreViewController.h */,
+				3DB6802413B8DC8600D06DF2 /* fitnessStoreViewController.m */,
+				3DB6802613B90A0200D06DF2 /* definitions.h */,
+				3DB6800013B8DA2E00D06DF2 /* fitnessStoreAppDelegate.m */,
+				3DB6800213B8DA2E00D06DF2 /* MainWindow.xib */,
+				3DB67FF713B8DA2E00D06DF2 /* Supporting Files */,
+			);
+			path = fitnessStore;
+			sourceTree = "<group>";
+		};
+		3DB67FF713B8DA2E00D06DF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67FF813B8DA2E00D06DF2 /* fitnessStore-Info.plist */,
+				3DB67FF913B8DA2E00D06DF2 /* InfoPlist.strings */,
+				3DB67FFC13B8DA2E00D06DF2 /* fitnessStore-Prefix.pch */,
+				3DB67FFD13B8DA2E00D06DF2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DB6801013B8DA2E00D06DF2 /* fitnessStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6801713B8DA2E00D06DF2 /* fitnessStoreTests.h */,
+				3DB6801913B8DA2E00D06DF2 /* fitnessStoreTests.m */,
+				3DB6801113B8DA2E00D06DF2 /* Supporting Files */,
+			);
+			path = fitnessStoreTests;
+			sourceTree = "<group>";
+		};
+		3DB6801113B8DA2E00D06DF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6801213B8DA2E00D06DF2 /* fitnessStoreTests-Info.plist */,
+				3DB6801313B8DA2E00D06DF2 /* InfoPlist.strings */,
+				3DB6801613B8DA2E00D06DF2 /* fitnessStoreTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB67FEB13B8DA2E00D06DF2 /* fitnessStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB6801D13B8DA2E00D06DF2 /* Build configuration list for PBXNativeTarget "fitnessStore" */;
+			buildPhases = (
+				3DB67FE813B8DA2E00D06DF2 /* Sources */,
+				3DB67FE913B8DA2E00D06DF2 /* Frameworks */,
+				3DB67FEA13B8DA2E00D06DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fitnessStore;
+			productName = fitnessStore;
+			productReference = 3DB67FEC13B8DA2E00D06DF2 /* fitnessStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB6800913B8DA2E00D06DF2 /* fitnessStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB6802013B8DA2E00D06DF2 /* Build configuration list for PBXNativeTarget "fitnessStoreTests" */;
+			buildPhases = (
+				3DB6800513B8DA2E00D06DF2 /* Sources */,
+				3DB6800613B8DA2E00D06DF2 /* Frameworks */,
+				3DB6800713B8DA2E00D06DF2 /* Resources */,
+				3DB6800813B8DA2E00D06DF2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB6800F13B8DA2E00D06DF2 /* PBXTargetDependency */,
+			);
+			name = fitnessStoreTests;
+			productName = fitnessStoreTests;
+			productReference = 3DB6800A13B8DA2E00D06DF2 /* fitnessStoreTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB67FE313B8DA2E00D06DF2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3DB67FE613B8DA2E00D06DF2 /* Build configuration list for PBXProject "fitnessStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DB67FE113B8DA2E00D06DF2;
+			productRefGroup = 3DB67FED13B8DA2E00D06DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB67FEB13B8DA2E00D06DF2 /* fitnessStore */,
+				3DB6800913B8DA2E00D06DF2 /* fitnessStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB67FEA13B8DA2E00D06DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB67FFB13B8DA2E00D06DF2 /* InfoPlist.strings in Resources */,
+				3DB6800413B8DA2E00D06DF2 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB6800713B8DA2E00D06DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB6801513B8DA2E00D06DF2 /* InfoPlist.strings in Resources */,
+				3DB6801813B8DA2E00D06DF2 /* fitnessStoreTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DB6800813B8DA2E00D06DF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB67FE813B8DA2E00D06DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB67FFE13B8DA2E00D06DF2 /* main.m in Sources */,
+				3DB6800113B8DA2E00D06DF2 /* fitnessStoreAppDelegate.m in Sources */,
+				3DB6802513B8DC8600D06DF2 /* fitnessStoreViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB6800513B8DA2E00D06DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB6801A13B8DA2E00D06DF2 /* fitnessStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB6800F13B8DA2E00D06DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB67FEB13B8DA2E00D06DF2 /* fitnessStore */;
+			targetProxy = 3DB6800E13B8DA2E00D06DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DB67FF913B8DA2E00D06DF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB67FFA13B8DA2E00D06DF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DB6800213B8DA2E00D06DF2 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB6800313B8DA2E00D06DF2 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3DB6801313B8DA2E00D06DF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB6801413B8DA2E00D06DF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB6801B13B8DA2E00D06DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3DB6801C13B8DA2E00D06DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		3DB6801E13B8DA2E00D06DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fitnessStore/fitnessStore-Prefix.pch";
+				INFOPLIST_FILE = "fitnessStore/fitnessStore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DB6801F13B8DA2E00D06DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fitnessStore/fitnessStore-Prefix.pch";
+				INFOPLIST_FILE = "fitnessStore/fitnessStore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DB6802113B8DA2E00D06DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/fitnessStore.app/fitnessStore";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fitnessStoreTests/fitnessStoreTests-Prefix.pch";
+				INFOPLIST_FILE = "fitnessStoreTests/fitnessStoreTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3DB6802213B8DA2E00D06DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/fitnessStore.app/fitnessStore";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fitnessStoreTests/fitnessStoreTests-Prefix.pch";
+				INFOPLIST_FILE = "fitnessStoreTests/fitnessStoreTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB67FE613B8DA2E00D06DF2 /* Build configuration list for PBXProject "fitnessStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB6801B13B8DA2E00D06DF2 /* Debug */,
+				3DB6801C13B8DA2E00D06DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB6801D13B8DA2E00D06DF2 /* Build configuration list for PBXNativeTarget "fitnessStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB6801E13B8DA2E00D06DF2 /* Debug */,
+				3DB6801F13B8DA2E00D06DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DB6802013B8DA2E00D06DF2 /* Build configuration list for PBXNativeTarget "fitnessStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB6802113B8DA2E00D06DF2 /* Debug */,
+				3DB6802213B8DA2E00D06DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB67FE313B8DA2E00D06DF2 /* Project object */;
+}
