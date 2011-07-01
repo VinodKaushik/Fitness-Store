@@ -13,6 +13,7 @@
     
     UISegmentedControl* iCategorySelectorSegmentedControl;
     UILabel* iTestLabel;
+    UIToolbar* iBottomControlsBar; //UI element for the bottom controls
 
 @private
     NSInteger iCurrentCategory;  // ranging from 0-3. 
@@ -23,7 +24,8 @@
 
 @property (nonatomic, retain) UILabel* iTestLabel;
 @property (nonatomic, retain) UISegmentedControl* iCategorySelectorSegmentedControl;
-@property (nonatomic, assign) NSInteger iCurrentCategory;
+@property (nonatomic, retain) UIToolbar* iBottomControlsBar;
+@property (nonatomic, assign) NSInteger iCurrentCategory; 
 
 
 @end

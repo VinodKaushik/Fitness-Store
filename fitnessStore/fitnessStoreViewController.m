@@ -15,7 +15,7 @@
 @synthesize iTestLabel;
 @synthesize iCurrentCategory;
 @synthesize iCategorySelectorSegmentedControl;
-
+@synthesize iBottomControlsBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +37,9 @@
     
     [iCategorySelectorSegmentedControl release];
     iCategorySelectorSegmentedControl = nil;
+    
+    [iBottomControlsBar release];
+    iBottomControlsBar = nil;
     
     [super dealloc];
 }
@@ -75,6 +78,10 @@
 
     iTestLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,120,50,30)];
     [self.view addSubview:iTestLabel];
+    
+    iBottomControlsBar = [UIToolbar new];
+    iBottomControlsBar.frame = CGRectMake(0, (WINDOW_HEIGHT-BOTTOM_BAR_HEIGHT), BOTTOM_BAR_WIDTH, BOTTOM_BAR_HEIGHT);
+    [self.view addSubview:iBottomControlsBar];
     
     
     //default selection.
