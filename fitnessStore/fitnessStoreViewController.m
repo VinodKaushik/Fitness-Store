@@ -16,6 +16,7 @@
 @synthesize iCurrentCategory;
 @synthesize iCategorySelectorSegmentedControl;
 @synthesize iBottomControlsBar;
+@synthesize iCarouselScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,6 +41,9 @@
     
     [iBottomControlsBar release];
     iBottomControlsBar = nil;
+    
+    [iCarouselScrollView release];
+    iCarouselScrollView = nil;
     
     [super dealloc];
 }
@@ -71,6 +75,7 @@
     iCategorySelectorSegmentedControl = [[UISegmentedControl alloc]initWithItems:[NSArray arrayWithObjects:@"Treadmills", @"Ellipticals", @"Cycles", @"Strength", nil]];
     iCategorySelectorSegmentedControl.frame = CGRectMake(0, 0, CATEGORY_SELECTOR_BAR_WIDTH, CATEGORY_SELECTOR_BAR_HEIGHT);
     [self.view addSubview:iCategorySelectorSegmentedControl];
+    [iCategorySelectorSegmentedControl release];
     iCategorySelectorSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBordered;
     iCategorySelectorSegmentedControl.selectedSegmentIndex = 0;
     [iCategorySelectorSegmentedControl addTarget:(self) action:@selector(segmentedControlIndexChanged) forControlEvents:(UIControlEventValueChanged)];
@@ -78,13 +83,28 @@
 
     iTestLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,120,50,30)];
     [self.view addSubview:iTestLabel];
+    [iTestLabel release];
     
-    iBottomControlsBar = [UIToolbar new];
-    iBottomControlsBar.frame = CGRectMake(0, (WINDOW_HEIGHT-BOTTOM_BAR_HEIGHT), BOTTOM_BAR_WIDTH, BOTTOM_BAR_HEIGHT);
+    //Toolbar bottom 
+    iBottomControlsBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, (WINDOW_HEIGHT-BOTTOM_BAR_HEIGHT), BOTTOM_BAR_WIDTH, BOTTOM_BAR_HEIGHT)];
     [self.view addSubview:iBottomControlsBar];
+    [iBottomControlsBar release];
     
+    //Carousel
+    iCarouselScrollView = [[UIScrollView alloc] init];
+    iCarouselScrollView.frame = CGRectMake(0, (WINDOW_HEIGHT-BOTTOM_BAR_HEIGHT-CAROUSEL_STRIP_HEIGHT), CAROUSEL_STRIP_WIDTH, CAROUSEL_STRIP_HEIGHT);
+    [self.view addSubview:iCarouselScrollView];
+    [iCarouselScrollView release];
+    iCarouselScrollView.scrollEnabled = YES;
+    iCarouselScrollView.bounces = NO;
+    iCarouselScrollView.maximumZoomScale = 1.0;
+    iCarouselScrollView.minimumZoomScale = 1.0;
+    iCarouselScrollView.showsHorizontalScrollIndicator = NO;
+    iCarouselScrollView.showsVerticalScrollIndicator = NO;
+    [self reconstructCarousel];
     
-    //default selection.
+         
+    //default selected category.
     [self setSelectedCategory:0];  
     
 }
@@ -95,6 +115,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 }
 
 
@@ -131,7 +152,44 @@
      
 }
 
-// Category is changed
+
+-(void) reconstructCarousel
+{
+    NSInteger totalNumberOfItems = 0;
+    switch (iCurrentCategory)
+    {
+        case 0: totalNumberOfItems = TOTAL_NUMBER_OF_ITEMS_TREADMILL_CAROUSEL; break;
+        case 1: totalNumberOfItems = TOTAL_NUMBER_OF_ITEMS_ELLIPTICAL_CAROUSEL; break;  
+        case 2: totalNumberOfItems = TOTAL_NUMBER_OF_ITEMS_CYCLES_CAROUSEL; break;   
+        case 3: totalNumberOfItems = TOTAL_NUMBER_OF_ITEMS_STRENGTH_CAROUSEL; break;   
+    }
+    
+    //Carousel content size
+    iCarouselContentSize = CGSizeMake((totalNumberOfItems*(CAROUSEL_ITEM_WIDTH+GAP_BETWEEN_ITEMS) + 2*CAROUSEL_ARROW_WIDTH), CAROUSEL_STRIP_HEIGHT);
+    [iCarouselScrollView setContentSize:iCarouselContentSize];
+    
+    UILabel* iTest1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 600, CAROUSEL_STRIP_HEIGHT)];
+    UILabel* iTest2 = [[UILabel alloc] initWithFrame:CGRectMake(600, 0, iCarouselContentSize.width-600, CAROUSEL_STRIP_HEIGHT)];
+    [iCarouselScrollView addSubview:iTest1];
+    [iTest1 release];
+    [iCarouselScrollView addSubview:iTest2];
+    [iTest2 release];
+    
+    iTest1.text = @"First";
+    iTest2.text = @"Second";
+    
+    //Arrows
+    
+    //Carousel Items
+    
+
+}
+
+
+
+// ACTIONS //
+
+// Category is changed due to a click. This will call setSelectedCategory.
 - (void) segmentedControlIndexChanged 
 {
     if(iCategorySelectorSegmentedControl.selectedSegmentIndex!=iCurrentCategory){
